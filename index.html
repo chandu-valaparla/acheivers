@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>settins icon in css</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            section{
+                font-size: 100px;
+                align-items: center;
+                position: absolute;
+                left: 100px;
+                margin: 100px;
+            }
+            .icon{
+                animation-name: icon;
+                animation-delay: 0s;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            @keyframes icon{
+                form{
+                    rotate: 0deg;
+                }
+                to{
+                    rotate: 360deg;
+                }
+            }
+            .logo{
+                animation-name: logo;
+                animation-delay: 0s;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            @keyframes logo{
+                form{
+                    rotate: 0deg;
+                }
+                to{
+                    rotate: -360deg;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <i class="fa-solid fa-gear icon"></i>
+            <i class="fa-solid fa-gear logo"></i>
+        </section>
+    </body>
+</html>
